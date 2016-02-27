@@ -1,5 +1,609 @@
-@import url('./_variables.css');
+/*
+    Table of Contents
 
-header {
-    text-color: var(--clr-orange);
+    Variables
+
+    Utilities
+
+
+
+*/
+
+
+/*----------------------------------------------------*/
+/*                   Variables                        */
+/*----------------------------------------------------*/
+:root {
+    /*
+        Colors
+    */
+
+    /*
+        First CLRS from From http://clrs.cc/
+    */
+       --clrs-navy: #001f3f;
+       --clrs-blue: #0074D9;
+       --clrs-aqua: #7FDBFF;
+       --clrs-teal: #39CCCC;
+      --clrs-olive: #3D9970;
+      --clrs-green: #2ECC40;
+       --clrs-lime: #01FF70;
+     --clrs-yellow: #FFDC00;
+     --clrs-orange: #FF851B;
+        --clrs-red: #FF4136;
+     --clrs-maroon: #85144b;
+    --clrs-fuchsia: #F012BE;
+     --clrs-purple: #B10DC9;
+      --clrs-black: #111111;
+       --clrs-gray: #AAAAAA;
+     --clrs-silver: #DDDDDD;
+
+
+    /*
+        Custom Colors
+
+        Info
+        Warning
+        Danger
+        Success
+        White
+
+
+    */
+
+          --clr-blue: #00A6ED;
+        --clr-orange: #FFB400;
+           --clr-red: #F6511D;
+         --clr-green: #7FB800;
+         --clr-white: #FFFFFF;
+         --clr-black: #000000;
+    --clr-light-gray: #eeeeee;
+
+    /*
+        Font Variables
+
+        base font-size
+        h1
+        h2
+        h3
+        h4
+        h5
+        h6
+        small
+        blockquote
+
+    */
+
+     --font-base-size: 1em;
+       --font-h1-size: 3em;
+       --font-h2-size: 2.8em;
+       --font-h3-size: 2.6em;
+       --font-h4-size: 2.4em;
+       --font-h5-size: 2.2em;
+       --font-h6-size: 2em;
+    --font-small-size: 0.8em;
+       --font-bq-size: 1.5em;
+
+
+
+}
+
+/*----------------------------------------------------*/
+/*                   Utilities                        */
+/*----------------------------------------------------*/
+
+
+/*
+    text alignment
+    tal = text align left
+    tar = text align right
+    tac = text align center
+    taj = text align justify
+*/
+
+.utilities__tal {
+    text-align: left;
+}
+.utilities__tar {
+    text-align: right;
+}
+.utilities__tac {
+    text-align: center;
+}
+.utilities__taj {
+    text-align: justify;
+}
+
+/*
+    Floats
+    fl = float left
+    fr = float right
+    cf = clearfix
+    ->  Apply to the parent container that contains floats
+*/
+
+.utilities__fl {
+    float: left;
+}
+.utilities__fr {
+    float: right;
+}
+.utilities__cf:after {
+    clear: both;
+}
+
+/*
+    Margins
+    m1 - m5 = General all around margins percentage based
+        m10, m20, m25, m30, m40, m50 = general percentage based margins
+    mh1 - mh5 = Horizontal margins percentage based
+        mh10, mh20, mh25, mh30, mh40, mh50 = Horizontal percentage based margins
+    mv1 - mv5 = Vertical margins percentage based
+        mv10, mv20, mv25, mv30, mv40, mv50 = Vertical percentage based margins
+*/
+
+.utilities__m1 {
+    margin: 1% 1%;
+}
+.utilities__m2 {
+    margin: 2% 2%;
+}
+.utilities__m3 {
+    margin: 3% 3%;
+}
+.utilities__m4 {
+    margin: 4% 4%;
+}
+.utilities__m5 {
+    margin: 5% 5%;
+}
+.utilities__m10 {
+    margin: 10% 10%;
+}
+.utilities__m20 {
+    margin: 20% 20%;
+}
+.utilities__m25 {
+    margin: 25% 25%;
+}
+.utilities__m30 {
+    margin: 30% 30%;
+}
+.utilities__m40 {
+    margin: 40% 40%;
+}
+.utilities__m50 {
+    margin: 50% 50%;
+}
+
+.utilities__mh1 {
+    margin-left: 1%;
+    margin-right: 2%;
+}
+.utilities__mh2 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.utilities__mh3 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.utilities__mh4 {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.utilities__mh5 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.utilities__mh10 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.utilities__mh20 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.utilities__mh25 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.utilities__mh30 {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.utilities__mh40 {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.utilities__mh50 {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.utilities__mv1 {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.utilities__mv2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.utilities__mv3 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.utilities__mv4 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.utilities__mv5 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.utilities__mv10 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.utilities__mv20 {
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+.utilities__mv25 {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+.utilities__mv30 {
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+.utilities__mv40 {
+    margin-top: 40%;
+    margin-bottom: 40%;
+}
+.utilities__mv50 {
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+/*
+    Padding
+    p1 - p5 = General all around padding percentage based
+        p10, p20, p25, p30, p40, p50 = general percentage based padding
+    ph1 - ph5 = Horizontal padding percentage based
+        ph10, ph20, ph25, ph30, ph40, ph50 = Horizontal percentage based padding
+    pv1 - pv5 = Vertical padding percentage based
+        pv10, pv20, pv25, pv30, pv40, pv50 = Vertical percentage based padding
+*/
+
+.utilities__p1 {
+    padding: 1% 1%;
+}
+.utilities__p2 {
+    padding: 2% 2%;
+}
+.utilities__p3 {
+    padding: 3% 3%;
+}
+.utilities__p4 {
+    padding: 4% 4%;
+}
+.utilities__p5 {
+    padding: 5% 5%;
+}
+.utilities__p10 {
+    padding: 10% 10%;
+}
+.utilities__p20 {
+    padding: 20% 20%;
+}
+.utilities__p25 {
+    padding: 25% 25%;
+}
+.utilities__p30 {
+    padding: 30% 30%;
+}
+.utilities__p40 {
+    padding: 40% 40%;
+}
+.utilities__p50 {
+    padding: 50% 50%;
+}
+
+.utilities__ph1 {
+    padding-left: 1%;
+    padding-right: 2%;
+}
+.utilities__ph2 {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.utilities__ph3 {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.utilities__ph4 {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.utilities__ph5 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.utilities__ph10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.utilities__ph20 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.utilities__ph25 {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.utilities__ph30 {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.utilities__ph40 {
+    padding-left: 40%;
+    padding-right: 40%;
+}
+.utilities__ph50 {
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+.utilities__pv1 {
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.utilities__pv2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.utilities__pv3 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.utilities__pv4 {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.utilities__pv5 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.utilities__pv10 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.utilities__pv20 {
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.utilities__pv25 {
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+.utilities__pv30 {
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+.utilities__pv40 {
+    padding-top: 40%;
+    padding-bottom: 40%;
+}
+.utilities__pv50 {
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+
+
+.utilities__niceText {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bg__color_silver {
+    background-color: var(--clrs-silver);
+}
+.bg__color_white {
+    background-color: var(--clr-white);
+}
+
+/*
+    Grid
+    Built using http://johnotander.com/rework-flex-grid
+*/
+
+.grid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.grid-row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.grid-row-cell-1-6 {
+  max-width: 16.6666666667%;
+  flex-basis: 16.6666666667%;
+}
+
+.grid-row-cell-2-6 {
+  max-width: 33.3333333333%;
+  flex-basis: 33.3333333333%;
+}
+
+.grid-row-cell-3-6 {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.grid-row-cell-4-6 {
+  max-width: 66.6666666667%;
+  flex-basis: 66.6666666667%;
+}
+
+.grid-row-cell-5-6 {
+  max-width: 83.3333333333%;
+  flex-basis: 83.3333333333%;
+}
+
+.grid-row-cell-6 {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+.grid-row-cell-1-6,.grid-row-cell-1-6--sm,.grid-row-cell-1-6--md,.grid-row-cell-1-6--lg,.grid-row-cell-2-6,.grid-row-cell-2-6--sm,.grid-row-cell-2-6--md,.grid-row-cell-2-6--lg,.grid-row-cell-3-6,.grid-row-cell-3-6--sm,.grid-row-cell-3-6--md,.grid-row-cell-3-6--lg,.grid-row-cell-4-6,.grid-row-cell-4-6--sm,.grid-row-cell-4-6--md,.grid-row-cell-4-6--lg,.grid-row-cell-5-6,.grid-row-cell-5-6--sm,.grid-row-cell-5-6--md,.grid-row-cell-5-6--lg,.grid-row-cell-6,.grid-row-cell-6--sm,.grid-row-cell-6--md,.grid-row-cell-6--lg {
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.grid-row-cell-1-6--sm,.grid-row-cell-1-6--md,.grid-row-cell-1-6--lg,.grid-row-cell-2-6--sm,.grid-row-cell-2-6--md,.grid-row-cell-2-6--lg,.grid-row-cell-3-6--sm,.grid-row-cell-3-6--md,.grid-row-cell-3-6--lg,.grid-row-cell-4-6--sm,.grid-row-cell-4-6--md,.grid-row-cell-4-6--lg,.grid-row-cell-5-6--sm,.grid-row-cell-5-6--md,.grid-row-cell-5-6--lg,.grid-row-cell-6--sm,.grid-row-cell-6--md,.grid-row-cell-6--lg {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 32rem) {
+  .grid-row-cell-1-6--sm {
+    max-width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
+  }
+
+  .grid-row-cell-2-6--sm {
+    max-width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
+  }
+
+  .grid-row-cell-3-6--sm {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .grid-row-cell-4-6--sm {
+    max-width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
+  }
+
+  .grid-row-cell-5-6--sm {
+    max-width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
+  }
+
+  .grid-row-cell-6--sm {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .grid-row-cell-1-6--md {
+    max-width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
+  }
+
+  .grid-row-cell-2-6--md {
+    max-width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
+  }
+
+  .grid-row-cell-3-6--md {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .grid-row-cell-4-6--md {
+    max-width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
+  }
+
+  .grid-row-cell-5-6--md {
+    max-width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
+  }
+
+  .grid-row-cell-6--md {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .grid-row-cell-1-6--lg {
+    max-width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
+  }
+
+  .grid-row-cell-2-6--lg {
+    max-width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
+  }
+
+  .grid-row-cell-3-6--lg {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .grid-row-cell-4-6--lg {
+    max-width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
+  }
+
+  .grid-row-cell-5-6--lg {
+    max-width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
+  }
+
+  .grid-row-cell-6--lg {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+/*----------------------------------------------------*/
+/*                 Special Elements                   */
+/*----------------------------------------------------*/
+
+blockquote {
+    padding-left: 1em;
+    border-left: solid 4px var(--clrs-gray);
+    font-size: var(--font-bq-size);
+    margin-left: 0;
+}
+
+mark {
+    background-color: var(--clrs-yellow);
+}
+
+h1 {
+    font-size: var(--font-h1-size);
+}
+h2 {
+    font-size: var(--font-h2-size);
+}
+h3 {
+    font-size: var(--font-h3-size);
+}
+h4 {
+    font-size: var(--font-h4-size);
+}
+h5 {
+    font-size: var(--font-h5-size);
+}
+h6 {
+    font-size: var(--font-h6-size);
+}
+small {
+    font-size: var(--font-small-size);
+}
+body {
+    font-size: var(--font-base-size);
 }
