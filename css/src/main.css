@@ -1,0 +1,5 @@
+@import url('./_variables.css');
+
+header {
+    text-color: var(--clr-orange);
+}
