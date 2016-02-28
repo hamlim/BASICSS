@@ -734,21 +734,33 @@ mark {
 
 h1 {
     font-size: var(--font-h1-size);
+    margin: 0 0;
+    padding: 0.67em 0;
 }
 h2 {
     font-size: var(--font-h2-size);
+    margin: 0 0;
+    padding: 0.67em 0;
 }
 h3 {
     font-size: var(--font-h3-size);
+    margin: 0 0;
+    padding: 0.67em 0;
 }
 h4 {
     font-size: var(--font-h4-size);
+    margin: 0 0;
+    padding: 0.67em 0;
 }
 h5 {
     font-size: var(--font-h5-size);
+    margin: 0 0;
+    padding: 0.67em 0;
 }
 h6 {
     font-size: var(--font-h6-size);
+    margin: 0 0;
+    padding: 0.67em 0;
 }
 small {
     font-size: var(--font-small-size);
