@@ -73,7 +73,6 @@
         blockquote
 
     */
-
        --font-base-size: 1em;
          --font-h1-size: 3em;
          --font-h2-size: 2.8em;
@@ -93,6 +92,9 @@
 /*                   Utilities                        */
 /*----------------------------------------------------*/
 
+html {
+    font-family: 'Open Sans', sans-serif;
+}
 
 /*
     text alignment
@@ -405,7 +407,7 @@
 
 
 .utilities__niceText {
-    width: 50%;
+    width: 36em;
     margin: 0 auto;
 }
 
@@ -709,6 +711,18 @@
     color: var(--clr-light-gray);
 }
 
+/*
+    Text Styling
+    Note we only want to provide classes for things that HTML doesn't handle
+*/
+
+.utilities__caps {
+    text-transform: uppercase;
+}
+
+
+
+
 /*----------------------------------------------------*/
 /*                 Special Elements                   */
 /*----------------------------------------------------*/
@@ -767,4 +781,28 @@ small {
 }
 body {
     font-size: var(--font-base-size);
+}
+code {
+    background-color: var(--clr-light-gray);
+    display: block;
+    padding: 0.5em 2em;
+    border-radius: 15px;
+    position: relative;
+    white-space: pre-wrap;
+}
+kbd {
+    background-color: var(--clr-light-gray);
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+code:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: attr(data-lang);
+    border-left: solid 2px var(--clrs-gray);
+    border-bottom: solid 2px var(--clrs-gray);
+    background-color: var(--clrs-silver);
+    padding: 4px 4px;
+    border-top-right-radius: 10px;
 }

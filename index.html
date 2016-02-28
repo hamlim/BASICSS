@@ -7,8 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
+        <!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/dist/normalize.min.css">
         <link rel="stylesheet" href="css/src/main.css">
 
@@ -21,17 +21,36 @@
         <header class="bg__clrs_aqua">
             <nav class="utilities__niceText">
                 <div class="logo utilities__tac">
-                    <h1>Hello</h1>
+                    <h1>Welcome to <u>BASICSS</u></h1>
                 </div>
             </nav>
         </header>
         <main class="utilities__niceText">
-            <h1>h1</h1>
-            <h2>h2</h2>
-            <h3>h3</h3>
-            <h4>h4</h4>
-            <h5>h5</h5>
-            <h6>h6</h6>
+            <p>
+                Welcome to BASICSS, a simple little CSS framework built using 100% vanilla CSS.
+                The framework is very lightweight, and is built with CSS variables offering extensive, easily editable
+                properties.
+            </p>
+            <h3>Setup Instructions:</h3>
+            <ol>
+                <li>
+                    <p>
+                        Include the font link in the head of your HTML file.
+                    </p>
+                    <pre>
+                        <code data-lang="HTML">
+&lt;link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600
+,600italic,700,700italic,800,800italic
+&subset=latin,latin-ext' rel='stylesheet' type='text/css'&gt;
+                        </code>
+                    </pre>
+                </li>
+                <li>
+                    <p>
+                        Include the <kbd>main.css</kbd> file within the head of the HTML document.
+                    </p>
+                </li>
+            </ol>
             <blockquote>
                 <p>
                     Testing blockquote
@@ -40,7 +59,11 @@
             </blockquote>
             <mark>mark</mark>
             <small>small</small>
-
+            <pre><code data-lang="CSS">
+.class {
+    display: flex;
+}
+            </code></pre>
             <article class="grid">
                 <section class="grid-row">
                     <div class="grid-row-cell-3-6">
