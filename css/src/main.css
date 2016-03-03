@@ -51,13 +51,14 @@
 
     */
 
-          --clr-blue: #00A6ED;
-        --clr-orange: #FFB400;
-           --clr-red: #F6511D;
-         --clr-green: #7FB800;
+          --clr-blue: #00AAFF;
+        --clr-orange: #FFAA00;
+           --clr-red: #FF00AA;
+         --clr-green: #AAFF00;
          --clr-white: #FFFFFF;
          --clr-black: #000000;
-    --clr-light-gray: #eeeeee;
+    --clr-light-gray: #EEEEEE;
+        --clr-purple: #AA00FF;
 
     /*
         Font Variables
