@@ -5,7 +5,11 @@
 
     Utilities
 
+    Grid
 
+    Color Attributes
+
+    Special elements
 
 */
 
@@ -998,6 +1002,9 @@ html {
 .bg__clr_lightgray {
     background-color: var(--clr-light-gray);
 }
+.bg__clr_purple {
+    background-color: var(--clr-purple);
+}
 
 .clrs_silver {
     color: var(--clrs-silver);
@@ -1069,6 +1076,9 @@ html {
 }
 .clr_lightgray {
     color: var(--clr-light-gray);
+}
+.clr_purple {
+    color: var(--clr-purple);
 }
 
 /*
