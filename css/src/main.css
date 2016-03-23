@@ -488,61 +488,61 @@ html {
 }
 
 .height--10 {
-    height: 10vh;
+    min-height: 10vh;
 }
 .height--10-mlh{
     line-height: 10vh;
 }
 .height--20 {
-    height: 20vh;
+    min-height: 20vh;
 }
 .height--20-mlh{
     line-height: 20vh;
 }
 .height--30 {
-    height: 30vh;
+    min-height: 30vh;
 }
 .height--30-mlh{
     line-height: 30vh;
 }
 .height--40 {
-    height: 40vh;
+    min-height: 40vh;
 }
 .height--40-mlh{
     line-height: 40vh;
 }
 .height--50 {
-    height: 50vh;
+    min-height: 50vh;
 }
 .height--50-mlh{
     line-height: 50vh;
 }
 .height--60 {
-    height: 60vh;
+    min-height: 60vh;
 }
 .height--60-mlh{
     line-height: 60vh;
 }
 .height--70 {
-    height: 70vh;
+    min-height: 70vh;
 }
 .height--70-mlh{
     line-height: 70vh;
 }
 .height--80 {
-    height: 80vh;
+    min-height: 80vh;
 }
 .height--80-mlh{
     line-height: 80vh;
 }
 .height--90 {
-    height: 90vh;
+    min-height: 90vh;
 }
 .height--90-mlh{
     line-height: 90vh;
 }
 .height--100 {
-    height: 100vh;
+    min-height: 100vh;
 }
 .height--100-mlh{
     line-height: 100vh;
