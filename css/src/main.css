@@ -116,6 +116,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-base-size);
 }
 
 /*
@@ -1257,6 +1258,10 @@ html {
 /*                 Special Elements                   */
 /*----------------------------------------------------*/
 
+p {
+    font-size: var(--font-p-size);
+}
+
 blockquote {
     padding-left: 1em;
     border-left: solid 4px var(--clrs-gray);
@@ -1265,14 +1270,14 @@ blockquote {
     font-style: italic;
 }
 blockquote > cite {
-    font-size: var(--font-smaller-size);
+    font-size: var(--font-small-size);
     color: #DDDDDD;
 }
 
 
 mark {
     background-color: var(--clrs-yellow);
-     padding-left: 0.5em;
+    padding-left: 0.5em;
     padding-right: 0.5em;
 }
 
@@ -1336,6 +1341,12 @@ code:before {
     padding: 4px 4px;
     border-top-right-radius: 10px;
 }
+
+/*
+    Buttons
+*/
+
+
 .btn {
     padding: 1em 2em;
     border-radius: 10px;
@@ -1355,3 +1366,22 @@ code:before {
 .btn--fill {
     width: 100%;
 }
+
+/*
+    Links
+*/
+
+a {
+    transition: color .4s;
+    color: #265C83;
+}
+
+a:link,
+a:visited { color: #265C83; }
+a:hover   { color: #7FDBFF; }
+a:active  {
+    transition: color .3s;
+    color: #007BE6;
+}
+
+.link { text-decoration: none; }
