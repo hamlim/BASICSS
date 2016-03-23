@@ -2,14 +2,27 @@
     Table of Contents
 
     Variables
+        colors
+        font-sizes
 
     Utilities
+        #Text-styleing
+        #Font-Styleing
 
     Grid
+        #grid
 
     Color Attributes
+        background colors
+        colors
 
     Special elements
+        h1-h6
+        bq
+        p
+        cite
+        anchor / a
+        button / btn
 
 */
 
@@ -64,15 +77,16 @@
         lightgray2 -- lightgray2 (not sure what these will be)
     */
 
-    --clr-green1:     #16a085;
-    --clr-green2:     #2ecc71;
+    --clr-green1:     #2ecc71;
+    --clr-green2:     #16a085;
     --clr-blue1:      #3498db;
     --clr-blue2:      #2980b9;
     --clr-purple1:    #9b59b6;
     --clr-purple2:    #8e44ad;
     --clr-darkgray1:  #34495e;
     --clr-darkgray2:  #2c3e50;
-    --clr-yellow:     #f1c40f;
+    --clr-yellow1:    #F5D76E;
+    --clr-yellow2:    #F7CA18;
     --clr-orange1:    #f39c12;
     --clr-orange2:    #e67e22;
     --clr-red1:       #e74c3c;
@@ -116,6 +130,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-base-size);
 }
 
 /*
@@ -139,6 +154,21 @@ html {
     text-align: justify;
 }
 
+/*
+    #Font-Styleing
+    .utilities__caps -> capitalize
+    .utilities__lowercase -> lowercase
+    .utilities__uppercase -> uppercase
+*/
+.utilities__caps {
+    text-transform: capitalize;
+}
+.utilities__lowercase {
+    text-transform: lowercase;
+}
+.utilities__uppercase {
+    text-transform: uppercase;
+}
 /*
     Floats
     fl = float left
@@ -458,61 +488,61 @@ html {
 }
 
 .height--10 {
-    height: 10vh;
+    min-height: 10vh;
 }
 .height--10-mlh{
     line-height: 10vh;
 }
 .height--20 {
-    height: 20vh;
+    min-height: 20vh;
 }
 .height--20-mlh{
     line-height: 20vh;
 }
 .height--30 {
-    height: 30vh;
+    min-height: 30vh;
 }
 .height--30-mlh{
     line-height: 30vh;
 }
 .height--40 {
-    height: 40vh;
+    min-height: 40vh;
 }
 .height--40-mlh{
     line-height: 40vh;
 }
 .height--50 {
-    height: 50vh;
+    min-height: 50vh;
 }
 .height--50-mlh{
     line-height: 50vh;
 }
 .height--60 {
-    height: 60vh;
+    min-height: 60vh;
 }
 .height--60-mlh{
     line-height: 60vh;
 }
 .height--70 {
-    height: 70vh;
+    min-height: 70vh;
 }
 .height--70-mlh{
     line-height: 70vh;
 }
 .height--80 {
-    height: 80vh;
+    min-height: 80vh;
 }
 .height--80-mlh{
     line-height: 80vh;
 }
 .height--90 {
-    height: 90vh;
+    min-height: 90vh;
 }
 .height--90-mlh{
     line-height: 90vh;
 }
 .height--100 {
-    height: 100vh;
+    min-height: 100vh;
 }
 .height--100-mlh{
     line-height: 100vh;
@@ -520,7 +550,7 @@ html {
 
 
 /*
-    Grid
+    #Grid
     Built using http://codepen.io/matthamlin/pen/ONPjPW
 
     Grid
@@ -1113,10 +1143,13 @@ html {
     background-color: var(--clr-darkgray1);
 }
 .bg__clr_darkgray2 {
-    background-color: var(--clr-darkgray1);
+    background-color: var(--clr-darkgray2);
 }
-.bg__clr_yellow {
-    background-color: var(--clr-yellow);
+.bg__clr_yellow1 {
+    background-color: var(--clr-yellow1);
+}
+.bg__clr_yellow2 {
+    background-color: var(--clr-yellow2);
 }
 .bg__clr_orange1 {
     background-color: var(--clr-orange1);
@@ -1219,8 +1252,11 @@ html {
 .clr_darkgray2 {
     color: var(--clr-darkgray1);
 }
-.clr_yellow {
-    color: var(--clr-yellow);
+.clr_yellow1 {
+    color: var(--clr-yellow1);
+}
+.clr__yellow2 {
+    color: var(--clr-yellow2);
 }
 .clr_orange1 {
     color: var(--clr-orange1);
@@ -1257,6 +1293,10 @@ html {
 /*                 Special Elements                   */
 /*----------------------------------------------------*/
 
+p {
+    font-size: var(--font-p-size);
+}
+
 blockquote {
     padding-left: 1em;
     border-left: solid 4px var(--clrs-gray);
@@ -1265,14 +1305,14 @@ blockquote {
     font-style: italic;
 }
 blockquote > cite {
-    font-size: var(--font-smaller-size);
+    font-size: var(--font-small-size);
     color: #DDDDDD;
 }
 
 
 mark {
     background-color: var(--clrs-yellow);
-     padding-left: 0.5em;
+    padding-left: 0.5em;
     padding-right: 0.5em;
 }
 
@@ -1336,6 +1376,12 @@ code:before {
     padding: 4px 4px;
     border-top-right-radius: 10px;
 }
+
+/*
+    Buttons
+*/
+
+
 .btn {
     padding: 1em 2em;
     border-radius: 10px;
@@ -1355,3 +1401,22 @@ code:before {
 .btn--fill {
     width: 100%;
 }
+
+/*
+    Links
+*/
+
+a {
+    transition: color .4s;
+    color: #265C83;
+}
+
+a:link,
+a:visited { color: #265C83; }
+a:hover   { color: #7FDBFF; }
+a:active  {
+    transition: color .3s;
+    color: #007BE6;
+}
+
+.link { text-decoration: none; }
