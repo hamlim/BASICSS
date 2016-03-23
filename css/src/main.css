@@ -141,6 +141,21 @@ html {
 }
 
 /*
+    #Font-Styleing
+    .utilities__caps -> capitalize
+    .utilities__lowercase -> lowercase
+    .utilities__uppercase -> uppercase
+*/
+.utilities__caps {
+    text-transform: capitalize;
+}
+.utilities__lowercase {
+    text-transform: lowercase;
+}
+.utilities__uppercase {
+    text-transform: uppercase;
+}
+/*
     Floats
     fl = float left
     fr = float right
@@ -521,7 +536,7 @@ html {
 
 
 /*
-    Grid
+    #Grid
     Built using http://codepen.io/matthamlin/pen/ONPjPW
 
     Grid
