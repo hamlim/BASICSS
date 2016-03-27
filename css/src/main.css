@@ -1385,7 +1385,7 @@ code:before {
 
 .btn {
     padding: 1em 2em;
-    border-radius: 10px;
+    border-radius: 20px;
     outline: 0 !important;
 }
 
@@ -1430,7 +1430,26 @@ code:before {
     transition: 50ms;
     outline: 0 !important;
 }
-
+.btn--tertiary {
+    color: white;
+    background-color: var(--clr-purple1);
+    border: solid 2px var(--clr-purple1);
+    transition: 300ms;
+}
+.btn--tertiary:hover {
+    color: var(--clr-purple1);
+    background-color: white;
+    border: solid 2px var(--clr-purple1);
+    transition: 300ms;
+    outline: 0 !important;
+}
+.btn--tertiary:active {
+    color: white;
+    background-color: var(--clr-red1);
+    border: solid 2px var(--clr-red1);
+    transition: 50ms;
+    outline: 0 !important;
+}
 
 .btn--fill {
     width: 100%;
