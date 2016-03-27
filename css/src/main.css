@@ -1354,7 +1354,7 @@ body {
     /*font-size: var(--font-base-size);*/
 }
 code {
-    background-color: var(--clr-light-gray);
+    background-color: var(--clr-lightgray1);
     display: block;
     padding: 0.5em 2em;
     border-radius: 15px;
@@ -1362,7 +1362,7 @@ code {
     white-space: pre-wrap;
 }
 kbd {
-    background-color: var(--clr-light-gray);
+    background-color: var(--clr-lightgray1);
     padding-left: 0.25em;
     padding-right: 0.25em;
 }
@@ -1386,7 +1386,9 @@ code:before {
 .btn {
     padding: 1em 2em;
     border-radius: 10px;
+    outline: 0 !important;
 }
+
 .btn--primary {
     color: white;
     background-color: var(--clr-green1);
@@ -1398,7 +1400,38 @@ code:before {
     background-color: white;
     border: solid 2px var(--clr-green1);
     transition: 300ms;
+    outline: 0 !important;
 }
+.btn--primary:active {
+    color: white;
+    background-color: var(--clr-yellow1);
+    border: solid 2px var(--clr-yellow1);
+    transition: 50ms;
+    outline: 0 !important;
+}
+
+.btn--secondary {
+    color: white;
+    background-color: var(--clr-blue1);
+    border: solid 2px var(--clr-blue1);
+    transition: 300ms;
+}
+.btn--secondary:hover {
+    color: var(--clr-blue1);
+    background-color: white;
+    border: solid 2px var(--clr-blue1);
+    transition: 300ms;
+    outline: 0 !important;
+}
+.btn--secondary:active {
+    color: white;
+    background-color: var(--clr-orange1);
+    border: solid 2px var(--clr-orange1);
+    transition: 50ms;
+    outline: 0 !important;
+}
+
+
 .btn--fill {
     width: 100%;
 }
