@@ -1428,8 +1428,8 @@ code:before {
 }
 .btn--secondary:active {
     color: white;
-    background-color: var(--clr-orange1);
-    border: solid 2px var(--clr-orange1);
+    background-color: var(--clr-yellow1);
+    border: solid 2px var(--clr-yellow1);
     transition: 50ms;
     outline: 0 !important;
 }
@@ -1448,8 +1448,8 @@ code:before {
 }
 .btn--tertiary:active {
     color: white;
-    background-color: var(--clr-red1);
-    border: solid 2px var(--clr-red1);
+    background-color: var(--clr-yellow1);
+    border: solid 2px var(--clr-yellow1);
     transition: 50ms;
     outline: 0 !important;
 }
