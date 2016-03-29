@@ -487,6 +487,9 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+.utilities__fillParent {
+    width: 100% !important;
+}
 
 .height--10 {
     min-height: 10vh;
@@ -1256,7 +1259,7 @@ html {
 .clr_yellow1 {
     color: var(--clr-yellow1);
 }
-.clr__yellow2 {
+.clr_yellow2 {
     color: var(--clr-yellow2);
 }
 .clr_orange1 {
