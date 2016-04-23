@@ -136,40 +136,40 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: var(--font-base-size);
+    font-size: var(--font-base-size, 4vw);
 }
 /* Larger than mobile */
 @media (min-width: 400px) {
     html {
-        font-size: var(--font-base-mobile-size);
+        font-size: var(--font-base-mobile-size, 3.5vw);
     }
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
     html {
-        font-size: var(--font-base-phablet-size);
+        font-size: var(--font-base-phablet-size, 3vw);
     }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
     html {
-        font-size: var(--font-base-tablet-size);
+        font-size: var(--font-base-tablet-size, 2.5vw);
     }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
     html {
-        font-size: var(--font-base-desktop-size);
+        font-size: var(--font-base-desktop-size, 2vw);
     }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
     html {
-        font-size: var(--font-base-desktop-hd-size);
+        font-size: var(--font-base-desktop-hd-size, 1vw);
     }
 }
 
